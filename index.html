@@ -1,3 +1,32 @@
-<body>
-Hello
-</body>
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <style>
+      body {
+          margin: 0;
+      }
+      canvas {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+      }
+    </style>
+    
+    <title>HoverTanks</title>
+
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/web.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+
+  <body>
+    <div id="unityContainer" style="width: 100%; height: 100%; position: absolute; margin: 0"></div>
+  </body>
+</html>
