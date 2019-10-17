@@ -14,9 +14,18 @@
 
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
-
     <script src="Build/progress.js"></script>
+
     
+    <!-- GAnalytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132957656-2"</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-132957656-2');
+    </script>
+
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/web.json", {onProgress: moveProgress});
     </script>
