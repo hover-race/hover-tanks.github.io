@@ -21,10 +21,11 @@ canvas {
 #centered {
     position: absolute;
     width: 60%;
-    height: 10%;
+    height: 20%;
     z-index: 15;
-    top: 40%;
+    top: 30%;
     left: 20%;
+    border: 1px black;
 }
 #title {
     /* font-family: 'Coda Caption', sans-serif; */
@@ -35,4 +36,26 @@ canvas {
     color: #eb9e1c;
     -webkit-text-stroke: 3px black;
     padding-bottom: 20px;
+}
+#help {
+    width: 50%;
+    margin: 0 auto;
+    /* height: 100%; */
+    font-family: 'Coda', sans-serif;
+    font-size: 2vmin;
+    background-color: lightgray;
+    /* border: 3px black; */
+    border-radius: 25px;
+    /* display: inline-block; */
+    margin-top: 5%;
+    padding: 10px 20px 10px 20px;
+}
+#help-text {
+    padding: 10px 20px 10px 20px;
+
+}
+
+h3 {
+    text-align: center;
+    margin: 5px;
 }
